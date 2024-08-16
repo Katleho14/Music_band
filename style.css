@@ -112,6 +112,7 @@
     padding: 40px;
     text-align: center;
     color: #fff;
+    animation: heroAnimation 2s ease-in-out;
   }
   
   .hero-section h2 {
@@ -155,14 +156,35 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: showAnimation 2s ease-in-out;
   }
-  
+
+  @keyframes showAnimation {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
   .shows h4 {
     margin-bottom: 10px;
   }
+
+
   
   .about {
     margin-bottom: 40px;
+    animation: aboutAnimation 2s ease-in-out;
+  }
+
+  @keyframes aboutAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   
   .about p {
@@ -201,6 +223,17 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: albumAnimation 2s ease ease-in-out;
+  }
+
+  @keyframes albumAnimation {
+    0% {
+      transform: rotateY(90deg);
+    }
+
+    100% {
+      transform: rotateY(0deg);
+    }
   }
   
   .album img {
@@ -221,6 +254,16 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: newsletterAnimation 2s ease-in-out;
+  }
+
+  @keyframes newsletterAnimation {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
   
   .newsletter h4 {
@@ -237,3 +280,84 @@
     align-items: center;
 
   }
+
+  /* Footer Section */
+
+.footer-section {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  animation: footerAnimation 2s ease-in-out;
+}
+ 
+@keyframes footerAnimation {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content h4 {
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  margin-bottom: 20px;
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  color: #ccc;
+}
+
+/* Social Media Links */
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  margin-right: 20px;
+}
+
+.social-links a:last-child {
+  margin-right: 0;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Web Designers Attribution */
+
+.web-designers {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.web-designers a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.web-designers a:hover {
+  color: #23527c;
+}
