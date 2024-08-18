@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Join the Freshlyground experience with exclusive events, new music, and VIP perks.">
   <title>Freshlyground®</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+10&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sankofa+Display&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,22 +20,20 @@
     <nav class="nav">
       <h1>Freshlyground®</h1>
       <!-- Navigation Links -->
-      <a href="#">Events</a>
-      <a href="#">About</a>
-      <a href="#">Discography</a>
+      <a href="#" class="nav-links">Events</a>
+      <a href="#" class="nav-links">About</a>
+      <a href="#" class="nav-links">Discography</a>
       <!-- CTA Button to Book the Band -->
-      <a href="#"><button>Book Now</button></a>
+      <a href="#"><button class="book-now">Book Now</button></a>
     </nav>
   </header>
   
-  <hr>
-
   <!-- Hero Section -->
   <section class="hero-section">
     <div class="hero">
       <h2>"South Africa's hit-making machine." <br>- CNN</h2>
       <!-- CTA Button to Stream Music -->
-      <a href="https://music.apple.com/us/artist/freshlyground/175881653" target="_blank"><button>Stream our Music</button></a>
+      <a href="https://music.apple.com/us/artist/freshlyground/175881653" target="_blank"><button class="stream-btn">Stream our Music</button></a>
     </div>
   </section>
   
@@ -38,41 +41,46 @@
 
   <!-- Main Section for Upcoming Events -->
   <main>
+    <h3 class="event-heading">Upcoming Events</h3>
     <section class="upcoming-events">
-      <h3>Upcoming Events</h3>
       <!-- List of Shows with Dates -->
       <div class="shows" id="first-show">
+        <img src="Assets/Moses Mabhida.jfif" alt="Durban Show" style="border-top-left-radius: 7px; border-top-right-radius: 7px;"/>
         <h4>Durban, Moses Mabhida</h4>
         <p>31 August 2024, 15:00</p>
       </div>
       <div class="shows" id="second-show">
+        <img src="Assets/FNB Stadium.jfif" alt="Event 2" style="border-top-left-radius: 7px; border-top-right-radius: 7px;"/>
         <h4>Johannesburg, FNB Stadium</h4>
         <p>7 September 2024, 15:00</p>
       </div>
       <div class="shows" id="third-show">
-        <h4>Cape Town, Greenpoint Stadium</h4>
+        <img src="Assets/DHL Stadium.jfif" alt="Event 3" style="border-top-left-radius: 7px; border-top-right-radius: 7px;"/>
+        <h4>Cape Town, DHL Stadium</h4>
         <p>14 September 2024, 15:00</p>
       </div>
       <div class="shows" id="fourth-show">
+        <img src="Assets/NMB Stadium.jfif" alt="Event 4" style="border-top-left-radius: 7px; border-top-right-radius: 7px;"/>
         <h4>East London, Nelson Mandela Stadium</h4>
         <p>21 September 2024, 15:00</p>
       </div>
       <div class="shows" id="fifth-show">
+        <img src="Assets/Staples Center.jfif" alt="Event 5" style="border-top-left-radius: 7px; border-top-right-radius: 7px;"/>
         <h4>Los Angeles, Staples Center</h4>
         <p>5 October 2024, 15:00</p>
       </div>
       <div class="shows" id="sixth-show">
+        <img src="Assets/MSG.jfif" alt="Event 6" style="border-top-left-radius: 7px; border-top-right-radius: 7px;"/>
         <h4>New York, Madison Square Garden</h4>
         <p>12 October 2024, 15:00</p>
       </div>
     </section>
     
-    <hr>
 
     <!-- About the Band Section -->
     <section class="about">
-      <h3>About The Band</h3>
-      <p>Freshlyground weaves together the rhythmic soul of Africa and the smooth, timeless vibe of afro fusion, creating music that pulses with life. Their sound is a rich blend of earthy tones and electric grooves, where soaring melodies meet deep-rooted harmonies, carrying the stories of a diverse South Africa. For those who seek music that connects hearts and moves bodies, Freshlyground is an invitation to feel, to dance, and to be part of something greater—where every beat speaks to the soul.</p>
+      <h3 class="about-band">About The Band</h3>
+      <p class="about-text">Freshlyground weaves together the rhythmic soul of Africa and the smooth, timeless vibe of afro fusion, creating music that pulses with life. Their sound is a rich blend of earthy tones and electric grooves, where soaring melodies meet deep-rooted harmonies, carrying the stories of a diverse South Africa. For those who seek music that connects hearts and moves bodies, Freshlyground is an invitation to feel, to dance, and to be part of something greater—where every beat speaks to the soul.</p>
       
       <!-- Band Members Section -->
       <div class="members">
@@ -107,32 +115,47 @@
 
     <!-- Discography Section -->
     <section class="discography">
-      <h3>Discography</h3>
+      <h3 class="disco">Discography</h3>
       <!-- Album Covers and Info -->
-      <div class="album">
-        <a href="https://music.apple.com/us/album/jika-jika/1416920271"><img src="Assets/Jika Jika Album Cover.png" alt="Jika Jika Album Cover" style="max-width: 100px;"></a>
-        <p>Jika Jika <br>2003</p>
+      <div class="albums">
+        <div class="album">
+          <a href="https://music.apple.com/us/album/jika-jika/1416920271">
+            <img src="Assets/Jika Jika Album Cover.png" alt="Jika Jika Album Cover">
+          </a>
+          <p>Jika Jika <br>2003</p>
+        </div>
+        <div class="album">
+          <a href="https://music.apple.com/us/album/nomvula/310692104">
+            <img src="Assets/Nomvula Album Cover.png" alt="Nomvula Album Cover">
+          </a>
+          <p>Nomvula <br>2004</p>
+        </div>
+        <div class="album">
+          <a href="https://music.apple.com/us/album/macheri/310855632">
+            <img src="Assets/MaCheri Album Cover.png" alt="Ma'Cheri Album Cover">
+          </a>
+          <p>Ma'Cheri <br>2007</p>
+        </div>
+        <div class="album">
+          <a href="https://music.apple.com/us/album/radio-africa/1266424242">
+            <img src="Assets/Radio Africa Album Cover.png" alt="Radio Africa Album Cover">
+          </a>
+          <p>Radio Africa <br>2010</p>
+        </div>
+        <div class="album">
+          <a href="https://music.apple.com/us/album/take-me-to-the-dance/1378033554">
+            <img src="Assets/Take me to the dance Album Cover.png" alt="Take Me to the Dance Album Cover">
+          </a>
+          <p>Take Me to the Dance <br>2012</p>
+        </div>
+        <div class="album">
+          <a href="https://music.apple.com/us/album/freshlyground/989770057">
+            <img src="Assets/The Legend Album Cover.png" alt="The Legend Album Cover">
+          </a>
+          <p>The Legend Album <br>2013</p>
+        </div>
       </div>
-      <div class="album">
-        <a href="https://music.apple.com/us/album/nomvula/310692104"><img src="Assets/Nomvula Album Cover.png" alt="Nomvula Album Cover" style="max-width: 100px;"></a>
-        <p>Nomvula <br>2004</p>
-      </div>
-      <div class="album">
-        <a href="https://music.apple.com/us/album/macheri/310855632"><img src="Assets/MaCheri Album Cover.png" alt="Ma'Cheri Album Cover" style="max-width: 100px;"></a>
-        <p>Ma'Cheri <br>2007</p>
-      </div>
-      <div class="album">
-        <a href="https://music.apple.com/us/album/radio-africa/1266424242"><img src="Assets/Radio Africa Album Cover.png" alt="Radio Africa Album Cover" style="max-width: 100px;"></a>
-        <p>Radio Africa <br>2010</p>
-      </div>
-      <div class="album">
-        <a href="https://music.apple.com/us/album/take-me-to-the-dance/1378033554"><img src="Assets/Take me to the dance Album Cover.png" alt="Take Me to the Dance Album Cover" style="max-width: 100px;"></a>
-        <p>Take Me to the Dance <br>2012</p>
-      </div>
-      <div class="album">
-        <a href="https://music.apple.com/us/album/freshlyground/989770057"><img src="Assets/The Legend Album Cover.png" alt="The Legend Album Cover" style="max-width: 100px;"></a>
-        <p>The Legend Album <br>2013</p>
-      </div>
+      
     </section>
   </main>
   
@@ -148,8 +171,6 @@
     </form>
   </section>
   
-  <hr>
-
   <!-- Footer Section with Booking and Social Links -->
   <footer class="footer-section">
     <div class="footer-content">
